@@ -1,0 +1,88 @@
+.mainHeading {
+    font-size: 48px;
+    color: #191a20;
+    font-weight: 900;
+    
+  }
+  
+  .txtCreate {
+    color: #fba70b;
+  }
+  
+  .para {
+    font-size: 17px;
+    color: #7a7a7a;
+    font-weight: 300;
+    line-height: 30px;
+  }
+  
+  .btnPrimary {
+    background-color: #fba70b;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+  
+    border: 0px;
+    padding: 15px 25px;
+  
+    border-radius: 25px;
+  }
+  
+  .btnPrimary:hover {
+    background-color: #f1556a;
+  }
+  
+  .landingSection {
+    padding: 10%;
+    background-image: url("https://lava-homepage.firebaseapp.com/assets/images/banner-bg.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+  }
+  
+  .hyperlink {
+    text-decoration: none;
+  }
+  
+  .secondSection {
+    padding: 10%;
+  }
+  
+  .featureCardGrid {
+    display: flex;
+  }
+  
+  .featureCard {
+    box-shadow: 2px 2px 4px #ccc;
+    width: 33%;
+    padding: 60px 30px;
+    text-align: center;
+    margin: 0 12px;
+  }
+  
+  .featureCardHeading {
+    margin-top: 0px;
+    font-size: 22px;
+    color: #1e1e1e;
+    margin-bottom: 25px;
+    font-weight: 500;
+  }
+  
+  .featureCardDesc {
+    font-size: 15px;
+    line-height: 25px;
+    color: #888;
+    font-weight: 400;
+  }
+  
+  .FeatureCardBtn {
+    background-color: #f4813f;
+  }
+  
+  .provide {
+    text-align: center;
+    font-size: 52px;
+    color: #191a20;
+    font-weight: 900;
+  }
+  

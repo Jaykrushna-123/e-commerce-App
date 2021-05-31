@@ -1,0 +1,150 @@
+API's
+expressjs : framework/library
+
+nest.js : framework : typescript
+
+framework : library
+
+
+set of library : framework
+
+Kitchen : framework
+oven : library
+
+
+nest new nest-api-app
+
+nest-cli.json : the config file of your application
+
+
+src : application code
+
+modules : features of your application (product, order, order-detail, user)
+controllers : routes 
+services : bussiness logic (controllers)
+entities : models
+
+One root/main feature : main entry point : APP MODULE
+
+tables : entities (table def/schema def)
+
+@Decorator() : 
+provides the metadata information to a class
+
+imports : which module you want to use within this
+            current module
+
+module : library
+
+
+a.js
+import b from './b';
+function test(){
+    demo()
+}
+
+b.js
+export function demo(){
+
+}
+
+D.I : 
+
+SOLID principle
+
+SOLID : DESIGN PATTERN
+
+S : single responsibility
+D : Dependency injection : 
+    strongly coupled
+    loosely coupled
+
+    interface IEngine
+
+    class Car{
+        constructor(IEngine){}
+    }
+    class Engine implements IEngine{
+        constructor(Mechanism){}
+    }
+    class Engine1 implements IEngine{
+        constructor(Mechanism){}
+    }
+    class Engine2 implements IEngine{
+        constructor(Mechanism){}
+    }
+    class Mechanism{}
+
+    void main(){
+        let obj=new Car(); // 100 places
+    }
+
+    D.I : Dependency Injection :
+    is used to automatically create an instance of the object to be injected
+
+    single responsibility principle
+
+    MAPPING : 1 place
+    interface, class
+    IEngine, Engine1 : single point change
+
+    single point of change
+
+    C : POST
+    R : GET
+
+    ORM : 
+    Sequelize
+    TypeORM
+
+    Product
+
+    nest cli : schematics : templates
+
+    nest g resource product
+
+    entities : schema def : product.entity.ts
+    dto : data transfer object : data structure of the post data being received
+
+    productId : auto gen
+    productName : name
+
+    REPOSITORY PATTERN : REPOSITORY
+
+    1. define the entity
+    2. load the entity in the module to notify nest, typeorm about our new entity
+    3. inject the REPOSITORY object of the entity created
+
+    DOCUMENTATION
+    API DOCS : Swagger
+
+    create a new app : nest new app-name
+    creating a CRUD resource : nest g resource resource-name
+    create a module : nest g module module-name : nest g module auth
+    create a controller : nest g controller controller-name : nest g controller auth
+    create a class : nest g class class-name : nest g class auth/entities/user.entity
+    create a service : nest g service service-name : nest g service auth
+
+    auth : login , register
+    dto : POST, PUT, PATCH
+
+    nest g class auth/dto/create-user.dto
+    nest g class auth/dto/login.dto
+
+STEPS
+    create the module : FEATURE : AUTHENTICATION
+    create the controller : AUTHENTICATION ROUTES
+    create the entity : Table definition for the user 
+    register the entity in the module file : only after registering REPOSITORY will be available
+    create the dto's : define the structure of the data you want to receive
+    using the dto in the controller
+    create the service
+    write the bussiness logic of the service
+    inject the service in the controller & than we can use the service object functions
+
+    Password : strategies : mid dlewares : auth-middleware
+
+    Public : no token
+    Protected : token is required : GUARDS
+
+    jwt.guard.ts
